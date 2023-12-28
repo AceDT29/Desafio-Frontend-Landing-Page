@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .h2Styles {
+        @apply mt-14 text-center text-gray-700 font-bold text-4xl md:text-2xl md:text-start;
+    }
+    .pStyles {
+        @apply my-5 text-lg text-center text-gray-700/75 font-thin md:text-base md:text-start;
+    }
+}
