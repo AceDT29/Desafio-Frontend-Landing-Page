@@ -11,7 +11,6 @@ module.exports = {
         "lightRedBG": ["hsl(355, 100%, 74%)"],
         "VeryLightRed": ["hsl(13, 100%, 72%)"],
         "footDarkBlue": ["hsl(240, 10%, 16%)"]
-
       },
       backgroundImage: {
         "navImage": "url('../assets/blogr-landing-page-main/images/NavFigma.svg')",
