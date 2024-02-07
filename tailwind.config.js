@@ -27,8 +27,8 @@ module.exports = {
         "DesklaptopIll": "url('../assets/blogr-landing-page-main/images/LaptopDIllustration.svg')",
         "DeskBg": "url('../assets/blogr-landing-page-main/images/illustrationDesk.svg')",
         "FootM": "url('../assets/blogr-landing-page-main/images/FooterBgMobile.svg')",
-        "FootDesk": "url('../assets/blogr-landing-page-main/images/FooterBg.svg')"
-
+        "FootDesk": "url('../assets/blogr-landing-page-main/images/FooterBg.svg')",
+        "FormBg": "url('../assets/blogr-landing-page-main/images/FormBg.svg')"
       }
     },
   },

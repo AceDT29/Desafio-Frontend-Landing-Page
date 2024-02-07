@@ -20,6 +20,12 @@
         @apply text-center space-y-1 text-xs font-semibold text-slate-950;
     }
     .buttonInt {
-       @apply block active:scale-75 transition duration-150;
+       @apply block  cursor-pointer active:scale-75 transition duration-150;
+    }
+    .HiddenElments {
+        @apply fixed translate-x-full inset-0 bg-gradient-to-b from-white/50 to-slate-900/50 peer-checked:translate-x-0 transition-all
+    }
+    .FormStyles {
+        @apply relative flex flex-col items-start w-[550px] h-[500px] mx-auto p-8 mt-24 bg-FormBg text-footDarkBlue-0 text-base font-semibold text-start space-y-4 z-50 shadow-xl
     }
 }

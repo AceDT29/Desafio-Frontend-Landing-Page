@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Blog Landing Page</title>
 </head>
-<body class="font-Overpass">
-  
+<body class="font-Overpass">  
   <main>
+
     <header>
       <nav class="w-full h-[700px] md:h-[80vh] rounded-bl-[130px] bg-navImage bg-center bg-cover md:bg-navDesktop">
         <div class="max-w-[80%] h-auto mx-auto flex items-center justify-between pt-14 bg-cover bg-left-bottom">
@@ -118,43 +118,68 @@
           </div>
           <input class="peer hidden order-3" id="borgir" type="checkbox">
           <label class="w-10 h-10 bg-OpenMenu bg-cover cursor-pointer peer-checked:bg-CloseMenu transition-all z-50 md:hidden order-4" for="borgir"></label>
-          <div class="fixed translate-x-full inset-0 bg-gradient-to-b from-white/50 to-slate-900/50 peer-checked:translate-x-0 transition-all md:hidden">
-            <ul class="relative text-footDarkBlue-0 text-base font-semibold w-[70%] h-auto p-16 top-32 mx-auto bg-slate-50  rounded-md space-y-4 text-center md:flex md:right-28 z-50">
+          <div class="HiddenElments md:hidden">
+            <ul class="relative text-footDarkBlue-0 text-base font-semibold w-[70%] h-auto p-16 top-32 mx-auto bg-slate-50  rounded-md space-y-4 text-center md:flex md:right-28 z-40">
 
                 <li>
-                  <a class="" href="">Product</a> 
+                  <a class="cursor-pointer" href="">Product</a> 
                 </li>
 
                 <li>
-                  <a class="" href="">Company</a> 
+                  <a class="cursor-pointer" href="">Company</a> 
                 </li>
 
                 <li>
-                  <a class="" href="">Connect</a> 
+                  <a class="cursor-pointer" href="">Connect</a> 
                 </li>
                 
                 <hr class="border-t-2 border-gray-300/50 mx-auto"> 
 
                 <li>
-                  <a href="" class="">Login</a>
+                  <a href="" class="cursor-pointer">Login</a>
                 </li>
                 
                 <li class="">
-                  <a class="text-white text-base font-Ubuntu font-extrabold w-auto h-10 py-2 px-10 bg-gradient-to-r from-VeryLightRed-0 to-lightRedBG-0 rounded-full buttonInt" href="">Sign Up</a> 
+                  <label class="text-white text-base font-Ubuntu font-extrabold w-auto h-10 py-2 px-10 bg-gradient-to-r from-VeryLightRed-0 to-lightRedBG-0 rounded-full buttonInt cursor-pointer" href="">Sign Up</label> 
                 </li>
 
               </ul>
             </div>
             <div class="opacity-0 flex justify-around items-center lg:opacity-100 lg:mr-8">
               <a class="text-white text-sm mr-2" href="">Login</a>
-              <a class="self-center text-lightRedBG-0 text-base text-center font-Ubuntu font-extrabold w-auto h-10 py-2 px-10 bg-white rounded-full buttonInt" href="">Sign Up</a>
+              <input class="hidden peer" type="checkbox" id="SignYa">
+              <label class="self-center text-lightRedBG-0 text-base text-center font-Ubuntu font-extrabold w-auto h-10 py-2 px-10 bg-white rounded-full buttonInt z-50 peer-checked:bg-CloseMenu" for="SignYa">Sign Up</label>
+              <form action="" class="HiddenElments">
+                <div class="relative flex flex-col items-start w-[550px] h-[500px] mx-auto p-8 mt-24 bg-FormBg text-footDarkBlue-0 text-base font-semibold text-start space-y-4 z-50 shadow-xl">
+                  <h1 class="text-2xl text-lightRedBG-0">Register now</h1>
+                  <br class="border-t-2 border-x-gray-800/70 mx-auto">
+                  <label class="basis-[20%]" for="name">
+                    <p>Name</p>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off" required>
+                  </label>
+                  <label class="basis-[20%]" for="last-name">
+                    <p>Last Name</p>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" autocomplete="off" required>
+                  </label>
+                  <label class="basis-[20%]" for="email">
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                  </label>
+                  <label class="basis-[20%]" for="password">
+                    <p>Password</p>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                  </label>
+                  <br class="border-t-2 border-x-gray-800 mx-auto">
+                  <input class="basis-[10%] cursor-pointer text-lg block relative w-20 h-14 p-2 left-52 bg-lightRedBG-0 text-white rounded-lg hover:bg-red-500 transition duration-100" type="submit" value="Submit">
+                </div>
+              </form>
             </div>
           </div>
           <div class="p-8 mt-28 sm:mt-16 ">
             <h2 class="text-5xl text-white mb-4 font-bold  text-center md:font-extrabold">A modern publishing platform</h2>
             <p class="text-[26px] font-thin text-white/70 md:text-sm text-center">Grow your audience and build your online brand</p>
           </div>
-          <div class="flex justify-center ">
+          <div class="flex justify-center "> 
             <a class="w-auto h-auto p-3 text-2xl text-lightRedBG-0 font-semibold font-Ubuntu rounded-full bg-white mr-5 md:text-sm buttonInt" href="">Start for free</a>
             <a class="w-auto h-auto p-3 text-2xl text-white font-semibold font-Ubuntu rounded-full bg-transparent outline outline-offset-1 outline-white md:text-sm buttonInt" href="">Learn more</a>
           </div>
